@@ -48,7 +48,11 @@ namespace JustLikeACollection
         {
             for (int i = 0; i < 3; i++)
             {
-                
+                if (EqualityComparer<T>.Default.Equals(items[i], default(T)))
+                {
+                    items[i] = item;
+                    return;
+                }
             }
         }
 
