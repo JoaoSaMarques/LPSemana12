@@ -11,7 +11,10 @@ namespace HowManyOfThisType
                 int count = 0;
                 foreach (object item in items)
                 {
-                    
+                    if (item is T)
+                    {
+                        count++;
+                    }
                 }
             }
         }
