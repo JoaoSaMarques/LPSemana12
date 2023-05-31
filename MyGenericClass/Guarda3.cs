@@ -15,7 +15,7 @@ namespace MyGenericClass
         }
 
         /// <summary>
-        /// Returns items
+        /// Get items
         /// </summary>
         /// <param name="i"></param>
         /// <returns></returns>
@@ -25,6 +25,19 @@ namespace MyGenericClass
                 throw new IndexOutOfRangeException();
 
             return items[i];
+        }
+
+        /// <summary>
+        /// Set items
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="item"></param>
+        public void SetItem(int i, T item)
+        {
+            if (i < 0 || i > 2)
+                throw new IndexOutOfRangeException();
+
+            items[i] = item;
         }
     }
 }
