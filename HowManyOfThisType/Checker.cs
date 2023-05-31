@@ -16,6 +16,7 @@ namespace HowManyOfThisType
                         count++;
                     }
                 }
+                return count;
             }
         }
     }
