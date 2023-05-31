@@ -2,11 +2,8 @@
 
 namespace MyGenericClass
 {
-    class Program
+    public class Guarda3<T>
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        private T[] items;
     }
 }
