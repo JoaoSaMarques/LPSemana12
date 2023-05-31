@@ -41,6 +41,18 @@ namespace JustLikeACollection
         }
 
         /// <summary>
+        /// Add item
+        /// </summary>
+        /// <param name="item"></param>
+        public void Add(T item)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                
+            }
+        }
+
+        /// <summary>
         /// Get enumerator public
         /// </summary>
         /// <returns></returns>
