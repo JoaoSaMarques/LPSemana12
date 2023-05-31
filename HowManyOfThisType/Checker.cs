@@ -4,9 +4,12 @@ namespace HowManyOfThisType
 {
     class Program
     {
-        static void Main(string[] args)
+        public static class Checker
         {
-            Console.WriteLine("Hello, World!");
+            public static int HowManyOfType<T>(IEnumerable<object> items)
+            {   
+                
+            }
         }
     }
 }
