@@ -11,7 +11,9 @@ namespace TheyCameBefore
             foreach (T currentItem in items)
             {
                 if (currentItem.CompareTo(item) < 0)
-                                
+                {
+                    yield return currentItem;
+                }             
             }
 
         }
