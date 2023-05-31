@@ -2,11 +2,11 @@
 
 namespace TheyCameBefore
 {
-    class Program
+    public static class BeforeUtils
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        public static IEnumerable<T> GetTheOnesBefore<T>(IEnumerable<T> items, 
+        T item)
+            where T : IComparable<T>
+
     }
 }
