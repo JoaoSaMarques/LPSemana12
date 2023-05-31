@@ -39,5 +39,23 @@ namespace MyEnumerable
 
             items[i] = item;
         }
+
+        /// <summary>
+        /// Get enumerator public
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (T item in items)
+            {
+                yield return item;
+            }
+        }
+
+        //Return Enumerator
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 }
