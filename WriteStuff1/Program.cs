@@ -21,6 +21,12 @@ namespace WriteStuff1
                 //Reads user input every sentence
                 Console.Write("Insert a  string: ");
                 string input = Console.ReadLine();
+
+                //If there is nothing, stop program
+                if (string.IsNullOrEmpty(input))
+                break;
+
+                stringsQueue.Enqueue(input);
             }
         }
     }
