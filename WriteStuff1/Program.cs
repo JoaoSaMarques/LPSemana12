@@ -15,6 +15,13 @@ namespace WriteStuff1
             //name of the file chosen
             string fileName = args[0];
             Queue<string> stringsQueue = new Queue<string>();
+
+            while (true)
+            {
+                //Reads user input every sentence
+                Console.Write("Insert a  string: ");
+                string input = Console.ReadLine();
+            }
         }
     }
 }
