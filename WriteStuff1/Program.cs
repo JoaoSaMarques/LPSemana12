@@ -29,12 +29,24 @@ namespace WriteStuff1
                 stringsQueue.Enqueue(input);
             }
 
+            //Saves the strings into the file 
             try
-            {
+            {   
                 using (StreamWriter writer = new StreamWriter(fileName))
                 {
-
+                    while (stringsQueue.Count > 0)
+                    {
+                        string str = stringsQueue.Dequeue();
+                        writer.WriteLine(str);
+                    }
                 }
+            }
+
+            Console.WriteLine("Saved the  strings!");
+            //If it does not save
+            catch (IOException e)
+            {
+                Console.WriteLine("Failed to save: " + e.Message);
             }
         }
     }
