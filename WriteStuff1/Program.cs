@@ -28,6 +28,14 @@ namespace WriteStuff1
 
                 stringsQueue.Enqueue(input);
             }
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(fileName))
+                {
+
+                }
+            }
         }
     }
 }
