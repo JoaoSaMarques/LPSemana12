@@ -31,9 +31,11 @@ namespace WriteStuff2
                         writer.WriteLine(input);
                     }
                 }
+
+                Console.WriteLine("Saved the  strings!");
             }
 
-            Console.WriteLine("Saved the  strings!");
+            
             //If it does not save
             catch (IOException e)
             {
