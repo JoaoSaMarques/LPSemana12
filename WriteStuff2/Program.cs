@@ -17,13 +17,18 @@ namespace WriteStuff2
             
             //Saves the strings into the file 
             try
-            {   
+            {
                 using (StreamWriter writer = new StreamWriter(fileName))
                 {
-                    while (stringsQueue.Count > 0)
+                    while (true)
                     {
-                        string str = stringsQueue.Dequeue();
-                        writer.WriteLine(str);
+                        Console.Write("Insert a string: ");
+                        string input = Console.ReadLine();
+
+                        if (string.IsNullOrEmpty(input))
+                            break;
+
+                        writer.WriteLine(input);
                     }
                 }
             }
